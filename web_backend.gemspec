@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Mariusz Wyrozębski"]
   s.email       = ["mariuszwyrozebski@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{This is backend for translations}
+  s.description = %q{Web backedn purpose is to let users translate their applications in more comfortable ways than before}
 
   s.rubyforge_project = "web_backend"
 
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+  s.add_dependency('rails')
   s.add_dependency('on_the_spot', '0.0.5')
   s.add_development_dependency('on_the_spot', '0.0.5')
 
